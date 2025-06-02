@@ -1,0 +1,26 @@
+# Jekyll build output
+_site/
+
+# Sass/SCSS cache
+.sass-cache/
+
+# Jekyll cache & metadata
+.jekyll-cache/
+.jekyll-metadata
+
+# Bundler directory (if you run `bundle install --path vendor/bundle`)
+vendor/bundle/
+
+# macOS Finder files
+.DS_Store
+
+# Node modules (if you use any npm scripts)
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-error.log*
+
+# Editor temporary files
+*~ 
+*.swp
