@@ -1,20 +1,27 @@
----
+--- 
 layout: default
 title: Home
 ---
 
-<div class="container py-5" style="max-width: 1000px;">
+<!-- Hero Banner -->
+<div class="hero-banner text-white mb-5" style="background-image: url('{{ "/assets/images/home_banner.jpg" | relative_url }}'); background-size: cover; background-position: center; padding-top: 8rem; padding-bottom: 8rem;">
+  <div class="container text-center">
+    <h1 class="display-5 fw-bold">Welcome to TheDime Academy</h1>
+    <p class="lead mb-4">Master the future of Web3 with step-by-step lessons—from blockchain basics to DeFi and NFTs.</p>
+    <a href="#start-learning" class="btn btn-primary btn-lg">Start Learning</a>
+  </div>
+</div>
 
-  <h1 class="text-center mb-5">TheDime Academy – Web3 Education Portal</h1>
-
+<div id="start-learning" class="container py-5" style="max-width: 1000px;">
   <!-- Module: Crypto Fundamentals -->
   <section class="mb-5">
-    <h2 class="h4 mb-4">💡 Module: Crypto Fundamentals</h2>
+    <h2 class="h4 mb-1">Crypto Fundamentals</h2>
+    <p class="text-muted mb-4">Learn the essential technologies powering digital currencies and decentralized systems.</p>
     <div class="row g-4">
       <div class="col-md-4">
         <div class="card h-100 border-0 shadow-sm">
-          <img src="{{ '/assets/images/bitcoin-basics.jpg' | relative_url }}" class="card-img-top rounded-top" alt="How blockchain works">
-          <div class="card-body text-center">
+          <img src="{{ '/assets/images/how_blockchain_works.jpg' | relative_url }}" class="card-img-top rounded-top" alt="How blockchain works">
+          <div class="card-body text-left">
             <a href="{{ '/fundamentals/how-blockchain-works' | relative_url }}" class="card-title h5 text-decoration-none text-dark">
               How blockchain works
             </a>
@@ -26,14 +33,13 @@ title: Home
       </div>
       <div class="col-md-4">
         <div class="card h-100 border-0 shadow-sm">
-          <img src="{{ '/assets/images/bitcoin-basics.jpg' | relative_url }}" class="card-img-top rounded-top" alt="What are cryptocurrencies?">
-          <div class="card-body text-center">
+          <img src="{{ '/assets/images/what_are_cryptocurrencies.jpg' | relative_url }}" class="card-img-top rounded-top" alt="What are cryptocurrencies?">
+          <div class="card-body text-left">
             <a href="{{ '/fundamentals/what-are-cryptocurrencies' | relative_url }}" class="card-title h5 text-decoration-none text-dark">
               What are cryptocurrencies?
             </a>
             <p>
               A beginner-friendly overview of digital currencies, how they work, and why they matter in the Web3 ecosystem.
-            </p>
             </p>
           </div>
         </div>
@@ -41,13 +47,12 @@ title: Home
       <div class="col-md-4">
         <div class="card h-100 border-0 shadow-sm">
           <img src="{{ '/assets/images/bitcoin-basics.jpg' | relative_url }}" class="card-img-top rounded-top" alt="Introduction to Bitcoin">
-          <div class="card-body text-center">
+          <div class="card-body text-left">
             <a href="{{ '/fundamentals/introduction-to-bitcoin' | relative_url }}" class="card-title h5 text-decoration-none text-dark">
               Introduction to Bitcoin
             </a>
             <p>
               Learn the origins of Bitcoin, why it was created, and how it works as a decentralized digital currency.
-            </p>
             </p>
           </div>
         </div>
@@ -57,12 +62,13 @@ title: Home
 
   <!-- Module: Crypto Investing Fundamentals -->
   <section class="mb-5">
-    <h2 class="h4 mb-4">💰 Module: Crypto Investing Fundamentals</h2>
+    <h2 class="h4 mb-1">Crypto Investing Fundamentals</h2>
+    <p class="text-muted mb-4">Understand how to manage, store, and invest in cryptocurrencies safely and effectively.</p>
     <div class="row g-4">
       <div class="col-md-4">
         <div class="card h-100 border-0 shadow-sm">
-          <img src="{{ '/assets/images/bitcoin-basics.jpg' | relative_url }}" class="card-img-top rounded-top" alt="Understanding different types of cryptocurrency">
-          <div class="card-body text-center">
+          <img src="{{ '/assets/images/understanding_different_types.jpg' | relative_url }}" class="card-img-top rounded-top" alt="Understanding different types of cryptocurrency">
+          <div class="card-body text-left">
             <a href="{{ '/crypto-investing/understanding-different-types' | relative_url }}" class="card-title h5 text-decoration-none text-dark">
               Understanding different types of cryptocurrency
             </a>
@@ -74,8 +80,8 @@ title: Home
       </div>
       <div class="col-md-4">
         <div class="card h-100 border-0 shadow-sm">
-          <img src="{{ '/assets/images/bitcoin-basics.jpg' | relative_url }}" class="card-img-top rounded-top" alt="How to use crypto wallet">
-          <div class="card-body text-center">
+          <img src="{{ '/assets/images/introduction_to_wallet.jpg' | relative_url }}" class="card-img-top rounded-top" alt="How to use crypto wallet">
+          <div class="card-body text-left">
             <a href="{{ '/crypto-investing/introduction-to-wallet' | relative_url }}" class="card-title h5 text-decoration-none text-dark">
               Introduction to wallet
             </a>
@@ -87,8 +93,8 @@ title: Home
       </div>
       <div class="col-md-4">
         <div class="card h-100 border-0 shadow-sm">
-          <img src="{{ '/assets/images/bitcoin-basics.jpg' | relative_url }}" class="card-img-top rounded-top" alt="Centralised and decentralised exchange">
-          <div class="card-body text-center">
+          <img src="{{ '/assets/images/exchanges.jpg' | relative_url }}" class="card-img-top rounded-top" alt="Centralised and decentralised exchange">
+          <div class="card-body text-left">
             <a href="{{ '/crypto-investing/exchanges' | relative_url }}" class="card-title h5 text-decoration-none text-dark">
               Centralised and decentralised exchange
             </a>
@@ -101,14 +107,15 @@ title: Home
     </div>
   </section>
 
-  <!-- Module: DeFi -->
+  <!-- Module: Decentralized Finance (DeFi) -->
   <section class="mb-5">
-    <h2 class="h4 mb-4">🌊 Module: DeFi</h2>
+    <h2 class="h4 mb-1">Decentralized Finance (DeFi)</h2>
+    <p class="text-muted mb-4">Explore how DeFi opens access to banking services without middlemen.</p>
     <div class="row g-4">
       <div class="col-md-4">
         <div class="card h-100 border-0 shadow-sm">
-          <img src="{{ '/assets/images/bitcoin-basics.jpg' | relative_url }}" class="card-img-top rounded-top" alt="Introduction to DeFi">
-          <div class="card-body text-center">
+          <img src="{{ '/assets/images/introduction_to_defi.jpg' | relative_url }}" class="card-img-top rounded-top" alt="Introduction to DeFi">
+          <div class="card-body text-left">
             <a href="{{ '/defi/introduction-to-defi' | relative_url }}" class="card-title h5 text-decoration-none text-dark">
               Introduction to DeFi
             </a>
@@ -120,8 +127,8 @@ title: Home
       </div>
       <div class="col-md-4">
         <div class="card h-100 border-0 shadow-sm">
-          <img src="{{ '/assets/images/bitcoin-basics.jpg' | relative_url }}" class="card-img-top rounded-top" alt="Staking explained">
-          <div class="card-body text-center">
+          <img src="{{ '/assets/images/staking_explained.jpg' | relative_url }}" class="card-img-top rounded-top" alt="Staking explained">
+          <div class="card-body text-left">
             <a href="{{ '/defi/staking-explained' | relative_url }}" class="card-title h5 text-decoration-none text-dark">
               Staking explained
             </a>
@@ -133,8 +140,8 @@ title: Home
       </div>
       <div class="col-md-4">
         <div class="card h-100 border-0 shadow-sm">
-          <img src="{{ '/assets/images/bitcoin-basics.jpg' | relative_url }}" class="card-img-top rounded-top" alt="Earning yield safely">
-          <div class="card-body text-center">
+          <img src="{{ '/assets/images/earning_yield.jpg' | relative_url }}" class="card-img-top rounded-top" alt="Earning yield safely">
+          <div class="card-body text-left">
             <a href="{{ '/defi/earning-yield' | relative_url }}" class="card-title h5 text-decoration-none text-dark">
               Earning yield safely
             </a>
@@ -147,14 +154,15 @@ title: Home
     </div>
   </section>
 
-  <!-- Module: Web3 -->
+  <!-- Module: The Web3 Frontier -->
   <section class="mb-5">
-    <h2 class="h4 mb-4">🌐 Module: Web3</h2>
+    <h2 class="h4 mb-1">The Web3 Frontier</h2>
+    <p class="text-muted mb-4">Step into the next generation of the internet, owned and powered by users.</p>
     <div class="row g-4">
       <div class="col-md-4">
         <div class="card h-100 border-0 shadow-sm">
-          <img src="{{ '/assets/images/bitcoin-basics.jpg' | relative_url }}" class="card-img-top rounded-top" alt="Guide to Web3">
-          <div class="card-body text-center">
+          <img src="{{ '/assets/images/guide_to_web3.jpg' | relative_url }}" class="card-img-top rounded-top" alt="Guide to Web3">
+          <div class="card-body text-left">
             <a href="{{ '/web3/guide-to-web3' | relative_url }}" class="card-title h5 text-decoration-none text-dark">
               Guide to Web3
             </a>
@@ -166,8 +174,8 @@ title: Home
       </div>
       <div class="col-md-4">
         <div class="card h-100 border-0 shadow-sm">
-          <img src="{{ '/assets/images/bitcoin-basics.jpg' | relative_url }}" class="card-img-top rounded-top" alt="Understanding NFT">
-          <div class="card-body text-center">
+          <img src="{{ '/assets/images/understanding_nft.jpg' | relative_url }}" class="card-img-top rounded-top" alt="Understanding NFT">
+          <div class="card-body text-left">
             <a href="{{ '/web3/understanding-nft' | relative_url }}" class="card-title h5 text-decoration-none text-dark">
               Understanding NFT
             </a>
@@ -179,8 +187,8 @@ title: Home
       </div>
       <div class="col-md-4">
         <div class="card h-100 border-0 shadow-sm">
-          <img src="{{ '/assets/images/bitcoin-basics.jpg' | relative_url }}" class="card-img-top rounded-top" alt="OG NFT">
-          <div class="card-body text-center">
+          <img src="{{ '/assets/images/og_nft.jpg' | relative_url }}" class="card-img-top rounded-top" alt="OG NFT">
+          <div class="card-body text-left">
             <a href="{{ '/web3/og-nft' | relative_url }}" class="card-title h5 text-decoration-none text-dark">
               OG NFT
             </a>
@@ -193,14 +201,15 @@ title: Home
     </div>
   </section>
 
-  <!-- Module: Safety -->
+  <!-- Module: Crypto Safety & Security -->
   <section class="mb-5">
-    <h2 class="h4 mb-4">🛡 Module: Safety</h2>
+    <h2 class="h4 mb-1">Crypto Safety & Security</h2>
+    <p class="text-muted mb-4">Stay safe in Web3—learn to protect your funds and avoid scams.</p>
     <div class="row g-4">
       <div class="col-md-4">
         <div class="card h-100 border-0 shadow-sm">
-          <img src="{{ '/assets/images/bitcoin-basics.jpg' | relative_url }}" class="card-img-top rounded-top" alt="Hot vs Cold wallet">
-          <div class="card-body text-center">
+          <img src="{{ '/assets/images/hot_vs_cold_wallet.jpg' | relative_url }}" class="card-img-top rounded-top" alt="Hot vs Cold wallet">
+          <div class="card-body text-left">
             <a href="{{ '/safety/hot-vs-cold-wallet' | relative_url }}" class="card-title h5 text-decoration-none text-dark">
               Hot vs Cold wallet
             </a>
@@ -212,8 +221,8 @@ title: Home
       </div>
       <div class="col-md-4">
         <div class="card h-100 border-0 shadow-sm">
-          <img src="{{ '/assets/images/bitcoin-basics.jpg' | relative_url }}" class="card-img-top rounded-top" alt="Phishing, Rug pulls">
-          <div class="card-body text-center">
+          <img src="{{ '/assets/images/phishing_rug_pulls.jpg' | relative_url }}" class="card-img-top rounded-top" alt="Phishing, Rug pulls">
+          <div class="card-body text-left">
             <a href="{{ '/safety/phishing-rug-pulls' | relative_url }}" class="card-title h5 text-decoration-none text-dark">
               Phishing, Rug pulls
             </a>
@@ -225,8 +234,8 @@ title: Home
       </div>
       <div class="col-md-4">
         <div class="card h-100 border-0 shadow-sm">
-          <img src="{{ '/assets/images/bitcoin-basics.jpg' | relative_url }}" class="card-img-top rounded-top" alt="What to do if compromised">
-          <div class="card-body text-center">
+          <img src="{{ '/assets/images/what_to_do_if_compromised.jpg' | relative_url }}" class="card-img-top rounded-top" alt="What to do if compromised">
+          <div class="card-body text-left">
             <a href="{{ '/safety/what-to-do-if-compromised' | relative_url }}" class="card-title h5 text-decoration-none text-dark">
               What to do if compromised
             </a>
@@ -239,14 +248,15 @@ title: Home
     </div>
   </section>
 
-  <!-- Module: Using TheDime -->
+  <!-- Module: Using TheDime Platform -->
   <section class="mb-5">
-    <h2 class="h4 mb-4">⚙️ Module: Using TheDime</h2>
+    <h2 class="h4 mb-1">Using TheDime Platform</h2>
+    <p class="text-muted mb-4">Get the most out of TheDime's tools, features, and ecosystem.</p>
     <div class="row g-4">
       <div class="col-md-4">  
         <div class="card h-100 border-0 shadow-sm">
           <img src="{{ '/assets/images/bitcoin-basics.jpg' | relative_url }}" class="card-img-top rounded-top" alt="Using TheDime">
-          <div class="card-body text-center">
+          <div class="card-body text-left">
             <a href="{{ '/thedime' | relative_url }}" class="card-title h5 text-decoration-none text-dark">Using TheDime</a>
           </div>
         </div>
@@ -254,14 +264,15 @@ title: Home
     </div>
   </section>
 
-  <!-- Module: Community & Referral -->
+  <!-- Module: Community & Referral Program -->
   <section class="mb-5">
-    <h2 class="h4 mb-4">🤝 Module: Community & Referral</h2>
+    <h2 class="h4 mb-1">Community & Referral Program</h2>
+    <p class="text-muted mb-4">Grow with the community—earn rewards and join campaigns.</p>
     <div class="row g-4">
       <div class="col-md-4">
         <div class="card h-100 border-0 shadow-sm">
           <img src="{{ '/assets/images/bitcoin-basics.jpg' | relative_url }}" class="card-img-top rounded-top" alt="Community & Referral">
-          <div class="card-body text-center">
+          <div class="card-body text-left">
             <a href="{{ '/community' | relative_url }}" class="card-title h5 text-decoration-none text-dark">Community & Referral</a>
           </div>
         </div>

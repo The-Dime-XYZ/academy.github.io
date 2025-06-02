@@ -1,43 +1,48 @@
 ---
 layout: default
-title: How Blockchain Works
+title: Introduction to Bitcoin
 ---
 
 <section class="container py-5" style="max-width: 800px;">
   <h1 class="mb-4">How Blockchain Works</h1>
-  <p>Blockchain is the foundational technology behind cryptocurrencies and Web3. It is a distributed digital ledger that records transactions across many computers in a secure, transparent, and tamper-resistant way.</p>
+  <p>Blockchain is the core technology that powers cryptocurrencies and the broader Web3 ecosystem. At its essence, blockchain is a distributed digital ledger that records data and transactions in a way that is transparent, secure, and immutable. This makes it especially valuable in environments where trust and verification are critical.</p>
 
-  <h2 class="mt-5">🧱 What is a Block?</h2>
-  <p>A <strong>block</strong> is a collection of data—usually transaction records. Each block contains:</p>
+  <h2 class="mt-5">What is a Block?</h2>
+  <p>A <strong>block</strong> is a unit of data that stores a collection of confirmed transactions. Each block typically includes:</p>
   <ul>
-    <li>A list of transactions</li>
-    <li>A timestamp</li>
-    <li>A reference (hash) to the previous block</li>
+    <li><strong>Transaction Data:</strong> A list of transactions made over a period of time</li>
+    <li><strong>Timestamp:</strong> When the block was created</li>
+    <li><strong>Nonce:</strong> A random number used during mining (in PoW)</li>
+    <li><strong>Previous Block Hash:</strong> A cryptographic reference to the prior block in the chain</li>
+    <li><strong>Current Block Hash:</strong> A digital fingerprint that uniquely identifies the block</li>
   </ul>
-  <p>Blocks are linked together in chronological order to form a <strong>chain</strong>—hence, the name "blockchain."</p>
+  <p>These blocks are chained together in a linear, chronological order, forming the "blockchain."</p>
 
-  <h2 class="mt-5">🔗 How Blocks are Added</h2>
-  <p>New blocks are added to the blockchain through a process called <strong>consensus</strong>, where participants in the network agree on the validity of transactions. Two common methods are:</p>
+  <h2 class="mt-5">How New Blocks are Added</h2>
+  <p>New blocks are added through a process called <strong>consensus</strong>, which ensures all network participants agree on the state of the ledger. Two widely used consensus mechanisms are:</p>
   <ul>
-    <li><strong>Proof of Work (PoW):</strong> Computers solve complex puzzles to validate transactions. This is used in Bitcoin.</li>
-    <li><strong>Proof of Stake (PoS):</strong> Validators are chosen based on the amount of cryptocurrency they hold and are willing to “stake.” Used in Ethereum 2.0 and other chains.</li>
+    <li><strong>Proof of Work (PoW):</strong> Nodes (miners) solve complex cryptographic puzzles to validate transactions and add new blocks. It is energy-intensive and used by Bitcoin.</li>
+    <li><strong>Proof of Stake (PoS):</strong> Validators are selected based on the number of tokens they hold and lock up as a stake. It is more energy-efficient and used by Ethereum 2.0 and others.</li>
+  </ul>
+  <p>Once a block is added, it becomes a permanent part of the ledger and cannot be altered without consensus from the network.</p>
+
+  <h2 class="mt-5">Why Blockchain is Secure</h2>
+  <p>Blockchain offers strong security guarantees through its structure and protocol rules:</p>
+  <ul>
+    <li><strong>Immutability:</strong> Once data is recorded in a block and confirmed, it’s virtually impossible to alter it without changing all subsequent blocks.</li>
+    <li><strong>Decentralization:</strong> The ledger is replicated across thousands of nodes, removing any single point of failure.</li>
+    <li><strong>Cryptographic Hashing:</strong> Each block references the previous one via hash values, making tampering detectable.</li>
+    <li><strong>Consensus Protocols:</strong> Prevent malicious actors from introducing fraudulent transactions.</li>
   </ul>
 
-  <h2 class="mt-5">🛡 Why It's Secure</h2>
-  <p>Blockchains are considered secure because:</p>
+  <h2 class="mt-5">Real-World Applications of Blockchain</h2>
+  <p>While blockchain is best known as the infrastructure behind cryptocurrencies, it has broader uses across multiple industries:</p>
   <ul>
-    <li>Each block contains the hash of the previous block—if one is altered, the chain breaks.</li>
-    <li>The ledger is distributed—no single point of failure or control.</li>
-    <li>Consensus rules prevent invalid transactions.</li>
-  </ul>
-
-  <h2 class="mt-5">🌐 Real-World Applications</h2>
-  <p>Besides powering cryptocurrencies like Bitcoin and Ethereum, blockchain is used in:</p>
-  <ul>
-    <li>Supply chain tracking</li>
-    <li>Voting systems</li>
-    <li>Digital identity</li>
-    <li>Decentralized finance (DeFi)</li>
+    <li><strong>Supply Chain Management:</strong> Track goods from origin to destination with transparency</li>
+    <li><strong>Digital Identity:</strong> Secure and self-sovereign identity management</li>
+    <li><strong>Voting Systems:</strong> Tamper-resistant digital voting platforms</li>
+    <li><strong>Healthcare:</strong> Secure sharing of medical records across providers</li>
+    <li><strong>Decentralized Finance (DeFi):</strong> Peer-to-peer financial services without traditional banks</li>
   </ul>
 
   <div class="mt-5">

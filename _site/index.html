@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Home | Your awesome title</title>
+  <title>Home | TheDime Academy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/academy.github.io/assets/css/custom.css" rel="stylesheet" >
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
   <!-- React & Babel CDN -->
   <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
@@ -16,18 +18,25 @@
   <!-- Navbar -->
   <div id="react-navbar"></div>
   <main>
-    <div class="container py-5" style="max-width: 1000px;">
+    <!-- Hero Banner -->
+<div class="hero-banner text-white mb-5" style="background-image: url('/academy.github.io/assets/images/home_banner.jpg'); background-size: cover; background-position: center; padding-top: 8rem; padding-bottom: 8rem;">
+  <div class="container text-center">
+    <h1 class="display-5 fw-bold">Welcome to TheDime Academy</h1>
+    <p class="lead mb-4">Master the future of Web3 with step-by-step lessons—from blockchain basics to DeFi and NFTs.</p>
+    <a href="#start-learning" class="btn btn-primary btn-lg">Start Learning</a>
+  </div>
+</div>
 
-  <h1 class="text-center mb-5">TheDime Academy – Web3 Education Portal</h1>
-
+<div id="start-learning" class="container py-5" style="max-width: 1000px;">
   <!-- Module: Crypto Fundamentals -->
   <section class="mb-5">
-    <h2 class="h4 mb-4">💡 Module: Crypto Fundamentals</h2>
+    <h2 class="h4 mb-1">Crypto Fundamentals</h2>
+    <p class="text-muted mb-4">Learn the essential technologies powering digital currencies and decentralized systems.</p>
     <div class="row g-4">
       <div class="col-md-4">
         <div class="card h-100 border-0 shadow-sm">
-          <img src="/academy.github.io/assets/images/bitcoin-basics.jpg" class="card-img-top rounded-top" alt="How blockchain works">
-          <div class="card-body text-center">
+          <img src="/academy.github.io/assets/images/how_blockchain_works.jpg" class="card-img-top rounded-top" alt="How blockchain works">
+          <div class="card-body text-left">
             <a href="/academy.github.io/fundamentals/how-blockchain-works" class="card-title h5 text-decoration-none text-dark">
               How blockchain works
             </a>
@@ -39,14 +48,13 @@
       </div>
       <div class="col-md-4">
         <div class="card h-100 border-0 shadow-sm">
-          <img src="/academy.github.io/assets/images/bitcoin-basics.jpg" class="card-img-top rounded-top" alt="What are cryptocurrencies?">
-          <div class="card-body text-center">
+          <img src="/academy.github.io/assets/images/what_are_cryptocurrencies.jpg" class="card-img-top rounded-top" alt="What are cryptocurrencies?">
+          <div class="card-body text-left">
             <a href="/academy.github.io/fundamentals/what-are-cryptocurrencies" class="card-title h5 text-decoration-none text-dark">
               What are cryptocurrencies?
             </a>
             <p>
               A beginner-friendly overview of digital currencies, how they work, and why they matter in the Web3 ecosystem.
-            </p>
             </p>
           </div>
         </div>
@@ -54,13 +62,12 @@
       <div class="col-md-4">
         <div class="card h-100 border-0 shadow-sm">
           <img src="/academy.github.io/assets/images/bitcoin-basics.jpg" class="card-img-top rounded-top" alt="Introduction to Bitcoin">
-          <div class="card-body text-center">
+          <div class="card-body text-left">
             <a href="/academy.github.io/fundamentals/introduction-to-bitcoin" class="card-title h5 text-decoration-none text-dark">
               Introduction to Bitcoin
             </a>
             <p>
               Learn the origins of Bitcoin, why it was created, and how it works as a decentralized digital currency.
-            </p>
             </p>
           </div>
         </div>
@@ -70,12 +77,13 @@
 
   <!-- Module: Crypto Investing Fundamentals -->
   <section class="mb-5">
-    <h2 class="h4 mb-4">💰 Module: Crypto Investing Fundamentals</h2>
+    <h2 class="h4 mb-1">Crypto Investing Fundamentals</h2>
+    <p class="text-muted mb-4">Understand how to manage, store, and invest in cryptocurrencies safely and effectively.</p>
     <div class="row g-4">
       <div class="col-md-4">
         <div class="card h-100 border-0 shadow-sm">
-          <img src="/academy.github.io/assets/images/bitcoin-basics.jpg" class="card-img-top rounded-top" alt="Understanding different types of cryptocurrency">
-          <div class="card-body text-center">
+          <img src="/academy.github.io/assets/images/understanding_different_types.jpg" class="card-img-top rounded-top" alt="Understanding different types of cryptocurrency">
+          <div class="card-body text-left">
             <a href="/academy.github.io/crypto-investing/understanding-different-types" class="card-title h5 text-decoration-none text-dark">
               Understanding different types of cryptocurrency
             </a>
@@ -87,8 +95,8 @@
       </div>
       <div class="col-md-4">
         <div class="card h-100 border-0 shadow-sm">
-          <img src="/academy.github.io/assets/images/bitcoin-basics.jpg" class="card-img-top rounded-top" alt="How to use crypto wallet">
-          <div class="card-body text-center">
+          <img src="/academy.github.io/assets/images/introduction_to_wallet.jpg" class="card-img-top rounded-top" alt="How to use crypto wallet">
+          <div class="card-body text-left">
             <a href="/academy.github.io/crypto-investing/introduction-to-wallet" class="card-title h5 text-decoration-none text-dark">
               Introduction to wallet
             </a>
@@ -100,8 +108,8 @@
       </div>
       <div class="col-md-4">
         <div class="card h-100 border-0 shadow-sm">
-          <img src="/academy.github.io/assets/images/bitcoin-basics.jpg" class="card-img-top rounded-top" alt="Centralised and decentralised exchange">
-          <div class="card-body text-center">
+          <img src="/academy.github.io/assets/images/exchanges.jpg" class="card-img-top rounded-top" alt="Centralised and decentralised exchange">
+          <div class="card-body text-left">
             <a href="/academy.github.io/crypto-investing/exchanges" class="card-title h5 text-decoration-none text-dark">
               Centralised and decentralised exchange
             </a>
@@ -114,14 +122,15 @@
     </div>
   </section>
 
-  <!-- Module: DeFi -->
+  <!-- Module: Decentralized Finance (DeFi) -->
   <section class="mb-5">
-    <h2 class="h4 mb-4">🌊 Module: DeFi</h2>
+    <h2 class="h4 mb-1">Decentralized Finance (DeFi)</h2>
+    <p class="text-muted mb-4">Explore how DeFi opens access to banking services without middlemen.</p>
     <div class="row g-4">
       <div class="col-md-4">
         <div class="card h-100 border-0 shadow-sm">
-          <img src="/academy.github.io/assets/images/bitcoin-basics.jpg" class="card-img-top rounded-top" alt="Introduction to DeFi">
-          <div class="card-body text-center">
+          <img src="/academy.github.io/assets/images/introduction_to_defi.jpg" class="card-img-top rounded-top" alt="Introduction to DeFi">
+          <div class="card-body text-left">
             <a href="/academy.github.io/defi/introduction-to-defi" class="card-title h5 text-decoration-none text-dark">
               Introduction to DeFi
             </a>
@@ -133,8 +142,8 @@
       </div>
       <div class="col-md-4">
         <div class="card h-100 border-0 shadow-sm">
-          <img src="/academy.github.io/assets/images/bitcoin-basics.jpg" class="card-img-top rounded-top" alt="Staking explained">
-          <div class="card-body text-center">
+          <img src="/academy.github.io/assets/images/staking_explained.jpg" class="card-img-top rounded-top" alt="Staking explained">
+          <div class="card-body text-left">
             <a href="/academy.github.io/defi/staking-explained" class="card-title h5 text-decoration-none text-dark">
               Staking explained
             </a>
@@ -146,8 +155,8 @@
       </div>
       <div class="col-md-4">
         <div class="card h-100 border-0 shadow-sm">
-          <img src="/academy.github.io/assets/images/bitcoin-basics.jpg" class="card-img-top rounded-top" alt="Earning yield safely">
-          <div class="card-body text-center">
+          <img src="/academy.github.io/assets/images/earning_yield.jpg" class="card-img-top rounded-top" alt="Earning yield safely">
+          <div class="card-body text-left">
             <a href="/academy.github.io/defi/earning-yield" class="card-title h5 text-decoration-none text-dark">
               Earning yield safely
             </a>
@@ -160,14 +169,15 @@
     </div>
   </section>
 
-  <!-- Module: Web3 -->
+  <!-- Module: The Web3 Frontier -->
   <section class="mb-5">
-    <h2 class="h4 mb-4">🌐 Module: Web3</h2>
+    <h2 class="h4 mb-1">The Web3 Frontier</h2>
+    <p class="text-muted mb-4">Step into the next generation of the internet, owned and powered by users.</p>
     <div class="row g-4">
       <div class="col-md-4">
         <div class="card h-100 border-0 shadow-sm">
-          <img src="/academy.github.io/assets/images/bitcoin-basics.jpg" class="card-img-top rounded-top" alt="Guide to Web3">
-          <div class="card-body text-center">
+          <img src="/academy.github.io/assets/images/guide_to_web3.jpg" class="card-img-top rounded-top" alt="Guide to Web3">
+          <div class="card-body text-left">
             <a href="/academy.github.io/web3/guide-to-web3" class="card-title h5 text-decoration-none text-dark">
               Guide to Web3
             </a>
@@ -179,8 +189,8 @@
       </div>
       <div class="col-md-4">
         <div class="card h-100 border-0 shadow-sm">
-          <img src="/academy.github.io/assets/images/bitcoin-basics.jpg" class="card-img-top rounded-top" alt="Understanding NFT">
-          <div class="card-body text-center">
+          <img src="/academy.github.io/assets/images/understanding_nft.jpg" class="card-img-top rounded-top" alt="Understanding NFT">
+          <div class="card-body text-left">
             <a href="/academy.github.io/web3/understanding-nft" class="card-title h5 text-decoration-none text-dark">
               Understanding NFT
             </a>
@@ -192,8 +202,8 @@
       </div>
       <div class="col-md-4">
         <div class="card h-100 border-0 shadow-sm">
-          <img src="/academy.github.io/assets/images/bitcoin-basics.jpg" class="card-img-top rounded-top" alt="OG NFT">
-          <div class="card-body text-center">
+          <img src="/academy.github.io/assets/images/og_nft.jpg" class="card-img-top rounded-top" alt="OG NFT">
+          <div class="card-body text-left">
             <a href="/academy.github.io/web3/og-nft" class="card-title h5 text-decoration-none text-dark">
               OG NFT
             </a>
@@ -206,14 +216,15 @@
     </div>
   </section>
 
-  <!-- Module: Safety -->
+  <!-- Module: Crypto Safety & Security -->
   <section class="mb-5">
-    <h2 class="h4 mb-4">🛡 Module: Safety</h2>
+    <h2 class="h4 mb-1">Crypto Safety & Security</h2>
+    <p class="text-muted mb-4">Stay safe in Web3—learn to protect your funds and avoid scams.</p>
     <div class="row g-4">
       <div class="col-md-4">
         <div class="card h-100 border-0 shadow-sm">
-          <img src="/academy.github.io/assets/images/bitcoin-basics.jpg" class="card-img-top rounded-top" alt="Hot vs Cold wallet">
-          <div class="card-body text-center">
+          <img src="/academy.github.io/assets/images/hot_vs_cold_wallet.jpg" class="card-img-top rounded-top" alt="Hot vs Cold wallet">
+          <div class="card-body text-left">
             <a href="/academy.github.io/safety/hot-vs-cold-wallet" class="card-title h5 text-decoration-none text-dark">
               Hot vs Cold wallet
             </a>
@@ -225,8 +236,8 @@
       </div>
       <div class="col-md-4">
         <div class="card h-100 border-0 shadow-sm">
-          <img src="/academy.github.io/assets/images/bitcoin-basics.jpg" class="card-img-top rounded-top" alt="Phishing, Rug pulls">
-          <div class="card-body text-center">
+          <img src="/academy.github.io/assets/images/phishing_rug_pulls.jpg" class="card-img-top rounded-top" alt="Phishing, Rug pulls">
+          <div class="card-body text-left">
             <a href="/academy.github.io/safety/phishing-rug-pulls" class="card-title h5 text-decoration-none text-dark">
               Phishing, Rug pulls
             </a>
@@ -238,8 +249,8 @@
       </div>
       <div class="col-md-4">
         <div class="card h-100 border-0 shadow-sm">
-          <img src="/academy.github.io/assets/images/bitcoin-basics.jpg" class="card-img-top rounded-top" alt="What to do if compromised">
-          <div class="card-body text-center">
+          <img src="/academy.github.io/assets/images/what_to_do_if_compromised.jpg" class="card-img-top rounded-top" alt="What to do if compromised">
+          <div class="card-body text-left">
             <a href="/academy.github.io/safety/what-to-do-if-compromised" class="card-title h5 text-decoration-none text-dark">
               What to do if compromised
             </a>
@@ -252,14 +263,15 @@
     </div>
   </section>
 
-  <!-- Module: Using TheDime -->
+  <!-- Module: Using TheDime Platform -->
   <section class="mb-5">
-    <h2 class="h4 mb-4">⚙️ Module: Using TheDime</h2>
+    <h2 class="h4 mb-1">Using TheDime Platform</h2>
+    <p class="text-muted mb-4">Get the most out of TheDime's tools, features, and ecosystem.</p>
     <div class="row g-4">
       <div class="col-md-4">  
         <div class="card h-100 border-0 shadow-sm">
           <img src="/academy.github.io/assets/images/bitcoin-basics.jpg" class="card-img-top rounded-top" alt="Using TheDime">
-          <div class="card-body text-center">
+          <div class="card-body text-left">
             <a href="/academy.github.io/thedime" class="card-title h5 text-decoration-none text-dark">Using TheDime</a>
           </div>
         </div>
@@ -267,14 +279,15 @@
     </div>
   </section>
 
-  <!-- Module: Community & Referral -->
+  <!-- Module: Community & Referral Program -->
   <section class="mb-5">
-    <h2 class="h4 mb-4">🤝 Module: Community & Referral</h2>
+    <h2 class="h4 mb-1">Community & Referral Program</h2>
+    <p class="text-muted mb-4">Grow with the community—earn rewards and join campaigns.</p>
     <div class="row g-4">
       <div class="col-md-4">
         <div class="card h-100 border-0 shadow-sm">
           <img src="/academy.github.io/assets/images/bitcoin-basics.jpg" class="card-img-top rounded-top" alt="Community & Referral">
-          <div class="card-body text-center">
+          <div class="card-body text-left">
             <a href="/academy.github.io/community" class="card-title h5 text-decoration-none text-dark">Community & Referral</a>
           </div>
         </div>
